@@ -27,6 +27,12 @@ hadoop.proxyuser.$superuser.users	配置该superUser允许代理的用户
 <value>*</value>
 </property>
 <property>
+
+参考：
+http://dblab.xmu.edu.cn/blog/install-hadoop-cluster/
+https://blog.csdn.net/weixin_36836847/article/details/95510843
+
+
 <name>hadoop.proxyuser.userA.users</name>
 <value>user1,user2</value>
 </property>
