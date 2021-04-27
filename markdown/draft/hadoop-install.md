@@ -6,6 +6,10 @@ tags: install
 categories: hadoop
 ---
 
+Hadoop2.0版本开始支持ProxyUser的机制。含义是使用User A的用户认证信息，以User B的名义去访问hadoop集群。
+
+
+
 服务端需要在NameNode和ResourceManager的core-site.xml中进行代理权限相关配置。 对于每一个superUser用户，配置参数：
 
 配置	说明
