@@ -37,3 +37,30 @@ https://blog.csdn.net/weixin_36836847/article/details/95510843
 <value>user1,user2</value>
 </property>
 表示允许用户userA，在任意主机节点，代理用户user1和user2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 安装过程出现的问题：
+
+```
+软件包：mysql-community-server-5.7.20-1.el6.x86_64 (mysql57-community)
+
+需要：libsasl2.so.2()(64bit)
+```
+
+## 解决：
+centos7上sasl是so.3,centos6才是so.2
+
+1. 换个更高版本的mysql
+2. 换个centos6
