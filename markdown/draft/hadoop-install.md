@@ -68,7 +68,7 @@ centos7上sasl是so.3,centos6才是so.2
 2. 换个centos6
 
 ## mysqld --initialize没有给出登录密码
-打开/etc/my.cnf文件找到错误日志位置
+打开/etc/my.cnf文件找到错误日志位置  
 打开错误日志查找密码
 
 ## systemctl start mysqld启动mysql服务失败
