@@ -74,3 +74,8 @@ centos7上sasl是so.3,centos6才是so.2
 ## systemctl start mysqld启动mysql服务失败
 检查mysql的data目录的文件所有者以及所属用户组是否为mysql（data目录地址可以在my.cnf中找到）
 
+## schematool  -initSchema -dbType mysql错误
+```
+Exception in thread "main" java.lang.RuntimeException: com.ctc.wstx.exc.WstxParsingException: Illegal character entity: expansion character (code 0x8
+ at [row,col,system-id]: [3215,96,"file:/usr/local/hive/conf/hive-site.xml"]
+```
