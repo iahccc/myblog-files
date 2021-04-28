@@ -71,3 +71,6 @@ centos7上sasl是so.3,centos6才是so.2
 打开/etc/my.cnf文件找到错误日志位置
 打开错误日志查找密码
 
+## systemctl start mysqld启动mysql服务失败
+检查mysql的data目录的文件所有者以及所属用户组是否为mysql
+
