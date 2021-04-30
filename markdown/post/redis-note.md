@@ -6,8 +6,6 @@ tags: redis
 categories: redis
 ---
 
-[TOC]
-
 # Redis编译安装
 ## 安装步骤
     wget *redis安装包url*  
