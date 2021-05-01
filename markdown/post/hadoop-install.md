@@ -79,3 +79,4 @@ centos7上sasl是so.3,centos6才是so.2
 Exception in thread "main" java.lang.RuntimeException: com.ctc.wstx.exc.WstxParsingException: Illegal character entity: expansion character (code 0x8
  at [row,col,system-id]: [3215,96,"file:/usr/local/hive/conf/hive-site.xml"]
 ```
+
