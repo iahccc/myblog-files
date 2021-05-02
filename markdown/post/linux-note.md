@@ -64,7 +64,7 @@ APT的底层包是dpkg, 而dpkg 安装Package时, 会将 *.deb 放在 /var/cache
     :%s/a/b/g
 
 ## 常用操作命令
-杀死包含某关键字的所以进程
+杀死包含某关键字的所有进程
     ps -ef | grep param | grep -v grep | cut -c 9-15 | xargs kill -9
     或
     ps x | grep param | grep -v grep | awk ‘{print $1}’ | xargs kill -9
