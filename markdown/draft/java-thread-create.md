@@ -3,6 +3,7 @@ title: Java线程的创建
 cover: 'https://cdn.jsdelivr.net/gh/iahccc/PicBed/img/archive_img.jpeg'
 tags: Java线程
 categories: Java
+
 ---
 
 ## 什么是进程
