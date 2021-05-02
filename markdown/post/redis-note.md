@@ -75,7 +75,7 @@ Redis高可用常见的几种方式：
 
 接下来配置哨兵Sentinel。
 
-将sentinel.conf文件复制为sentinel-27000.conf、sentinel-27001.conf、sentinel-27002.conf(文件名以端口号结尾)并修改__(注意文件权限问题，需要给用户写权限)__
+将sentinel.conf文件复制为sentinel-27000.conf、sentinel-27001.conf、sentinel-27002.conf(文件名以端口号结尾)并修改**(注意文件权限问题，需要给用户写权限)**
 
     # 三个配置文件分别配置不同的端口号
     port <端口号>
