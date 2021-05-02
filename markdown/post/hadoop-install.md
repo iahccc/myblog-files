@@ -2,7 +2,7 @@
 title: Hadoop集群搭建
 cover: 
 date: 2021-04-27
-tags: install
+tags: install spark hive
 categories: hadoop
 ---
 
