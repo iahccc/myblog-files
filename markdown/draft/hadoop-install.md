@@ -87,4 +87,4 @@ beeline 连接时应该使用-n指定用户
 
 ## spark on yarn无法正常运行
 检查hostname
-检测/etc/hosts
+检查/etc/hosts
