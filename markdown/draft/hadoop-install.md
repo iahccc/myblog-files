@@ -80,3 +80,11 @@ Exception in thread "main" java.lang.RuntimeException: com.ctc.wstx.exc.WstxPars
  at [row,col,system-id]: [3215,96,"file:/usr/local/hive/conf/hive-site.xml"]
 ```
 
+## 
+
+Error: Error while compiling statement: FAILED: SemanticException Failed to get a spark session: org.apache.hadoop.hive.ql.metadata.HiveException: Failed to create Spark client for Spark session 1c66c552-f9c3-4880-8152-c97a900cb9ba (state=42000,code=40000)  
+beeline 连接时应该使用-n指定用户
+
+## spark on yarn无法正常运行
+检查hostname
+检测/etc/hosts
