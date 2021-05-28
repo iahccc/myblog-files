@@ -81,4 +81,4 @@ Caused by: java.net.ConnectException: Connection refused
 ```
 这是我某一台机器的hosts文件内容，这你能发现有什么问题吗？至少我不能...  
 后面我阴差阳错的把`192.168.28.100 localhost`放到的文件最后，发现问题解决了...你也可以把该条记录删了。集群里的所有机器都要改。  
-可能yarn是使用了当前ip对应的域名？
+可能yarn是使用了第一个当前ip对应的域名？
