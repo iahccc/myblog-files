@@ -65,4 +65,4 @@ Caused by: java.net.ConnectException: Connection refused
 原来这是NodeManage的端口信息，从日志里看有两条`Added node`记录，因为我的集群确实只有两个节点，但问题是两个节点为什么都是localhost？这就是问题所在了。在两个机器上分别查找这两个端口确实是存在的。  
 
 ## 问题解决
-
+搜索资料发现搭建hadoop的过程中需要修改hostname，查了一下
