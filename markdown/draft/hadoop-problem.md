@@ -67,3 +67,4 @@ Caused by: java.net.ConnectException: Connection refused
 ## 问题解决
 搜索资料发现搭建hadoop的过程中不同机器需要修改hostname，查了一下两台机器的hostname确实都是localhost（到这一步你们应该就已经可以解决问题了），我改完了之后以为就万事大吉了，日志里`Added node`记录还是显示的是localhost。。。   
 
+后面找了很久才发现问题出现在`/etc/hosts`文件
