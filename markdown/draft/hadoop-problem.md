@@ -10,7 +10,7 @@ categories: hadoop
 # spark on yarn出现时而正常时而异常的现象
 ## 问题描述
 使用spark-shell --master yarn，有时会在等待正常的时间后进入shell，有时则会在等待漫长的时间之后还是卡住，无法进入。
-使用hive on spark也是出现类似现象，有时语句能正常执行，有时就会出现`org.apache.hadoop.hive.ql.metadata.HiveException: Failed to create Spark client for Spark session`。网上查到的解决方法大多是增加hive-site.xml中相关的timeout参数来解决，可是调了之后不但没有解决，卡住的时间还更长了...  
+使用hive on spark也是出现类似现象，有时语句能正常执行，有时就会出现`org.apache.hadoop.hive.ql.metadata.HiveException: Failed to create Spark client for Spark session`。网上查到的解决方法大多是增加hive-site.xml中相关的timeout参数来解决，可是增加之后不但没有解决，卡住的时间还更长了...  
 于是开始查找日志，在resourcemanage的日志中找到如下异常
 ```
 2021-05-26 15:59:00,672 INFO org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher: Error launching appattempt_1622058364603_0002_000001. Got exception: java.net.ConnectException: Call From localhost/127.0.0.1 to localhost:39459 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
