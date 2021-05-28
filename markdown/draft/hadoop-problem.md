@@ -53,4 +53,16 @@ Caused by: java.net.ConnectException: Connection refused
 
 ```
 
-`ConnectException`，
+看了下本机确定没有开放39459端口，后来重启几次发现这个端口号还会变...，哪应该就是动态的了。  
+经过不断查找日志发现如下关键信息
+```
+2021-05-26 15:46:06,939 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: localhost:39459 Node Transitioned from NEW to RUNNING
+2021-05-26 15:46:06,943 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler: Added node localhost:39459 cluster capacity: <memory:8192, vCores:8>
+2021-05-26 15:46:10,833 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node localhost(cmPort: 44387 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId localhost:44387
+2021-05-26 15:46:10,833 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: localhost:44387 Node Transitioned from NEW to RUNNING
+2021-05-26 15:46:10,834 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler: Added node localhost:44387 cluster capacity: <memory:16384, vCores:16>
+```
+原来这是NodeManage的端口信息，从日志里看有两条`Added node`记录，因为我的集群确实只有两个节点，但问题是两个节点为什么都是localhost？这就是问题所在了。在两个机器上分别查找这两个端口确实是存在的。  
+
+## 问题解决
+
