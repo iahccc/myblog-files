@@ -32,6 +32,7 @@ APT的底层包是dpkg, 而dpkg 安装Package时, 会将 *.deb 放在 /var/cache
 	set autoindent
 	set softtabstop=4
 	set shiftwidth=4
+	syntax on 
 	inoremap jk <esc>
 	vnoremap p "_dP
 
