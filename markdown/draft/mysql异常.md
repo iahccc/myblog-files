@@ -28,4 +28,5 @@ java.sql.SQLException: connection is closed
         at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
 	...
 ```
-
+## 解决方案
+1. 
