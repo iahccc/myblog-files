@@ -9,6 +9,9 @@ categories:
 
 # [08s01] Communications link failure
 
+## 问题描述
+hibernate连接mysql执行sql语句时，有时成功有时失败。
+
 ## 异常代码如下：
 ```
 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 0, SQLState: 08S01
