@@ -26,4 +26,6 @@ java.sql.SQLException: connection is closed
         at org.hibernate.internal.SessionImpl.afterOperation(SessionImpl.java:511)
         at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1166)
         at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
+	...
 ```
+
