@@ -7,6 +7,9 @@ categories:
 
 ---
 
+
+
+异常代码如下：
 ```
 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 0, SQLState: 08S01
 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Communications link failure
