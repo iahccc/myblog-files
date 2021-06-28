@@ -29,4 +29,5 @@ java.sql.SQLException: connection is closed
 	...
 ```
 ## 解决方案
-1. 
+1. 检查mysql服务器磁盘容量是否不足（好家伙，白忙活了一天）。
+2. 如果服务器容量没到99%，则可以尝试修改mysql服务器wait_timeout参数。
