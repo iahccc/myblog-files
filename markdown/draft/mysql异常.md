@@ -12,7 +12,7 @@ categories:
 ## 问题描述
 hibernate连接mysql执行sql语句时，有时成功有时失败。
 
-## 异常代码如下：
+## 异常堆栈
 ```
 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 0, SQLState: 08S01
 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Communications link failure
